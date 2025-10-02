@@ -32,7 +32,7 @@ export default function DigitalClock() {
 
   return (
     <body className="flex justify-center items-center w-full min-h-[100vh] bg-[url(./assets/background4.jpg)] bg-cover bg-center bg-no-repeat">
-      <div className="text-white font-bold text-shadow-lg font-orbitron text-4xl shadow-2xl shadow-black p-2">
+      <div className="text-white font-bold text-shadow-lg font-orbitron text-4xl p-2 rounded-xl shadow-2xl shadow-black ring-2">
         {formatTime()}
       </div>
     </body>
