@@ -21,7 +21,7 @@ export default function DigitalClock() {
 
     hours = hours % 12 || 12;
 
-    return `${padZero(hours)}:${padZero(minutes)}:${padZero(
+    return `${padZero(hours)} : ${padZero(minutes)} : ${padZero(
       seconds
     )} ${meridiem}`;
   }
@@ -31,8 +31,10 @@ export default function DigitalClock() {
   }
 
   return (
-    <body>
-      <div>{formatTime()}</div>
+    <body className="flex justify-center items-center w-full min-h-[100vh] bg-[url(./assets/background4.jpg)] bg-cover bg-center bg-no-repeat">
+      <div className="text-white font-bold text-shadow-lg font-orbitron text-4xl shadow-2xl shadow-black p-2">
+        {formatTime()}
+      </div>
     </body>
   );
 }
